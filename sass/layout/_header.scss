@@ -1,0 +1,75 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-item + .contacts-item {
+  margin-left: 30px;
+}
+
+.nav-list__link {
+  position: relative;
+  color: var(--main-color);
+  font-weight: 500;
+  padding: 32px 0;
+  display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+    fill: var(--blue-color);
+  }
+}
+.active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-color);
+  border-radius: 2px;
+  left: 0;
+  bottom: -1px;
+}
+.current {
+  color: var(--blue-color);
+}
+
+.contacts-link {
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 32px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+  &:hover .icon,
+  &:focus .icon {
+    color: var(--blue-color);
+    fill: var(--blue-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+    fill: var(--blue-color);
+  }
+}
+
+.icon {
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}

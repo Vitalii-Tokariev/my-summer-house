@@ -1,0 +1,40 @@
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+.section {
+  padding: 94px 0;
+  &.about {
+    background-color: var(--icon-wrapper-color);
+  }
+  &.footer {
+    background: rgb(46, 90, 78);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
