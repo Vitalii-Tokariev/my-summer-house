@@ -8,7 +8,9 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /*height: auto;*/
 }
 
 h1,
@@ -30,7 +32,7 @@ ol {
 .section {
   padding: 94px 0;
   &.about {
-    background-color: var(--icon-wrapper-color);
+    background-color: rgb(237, 246, 244);
   }
   &.footer {
     background: rgb(46, 90, 78);
