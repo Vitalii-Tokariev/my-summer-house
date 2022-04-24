@@ -1,6 +1,6 @@
 .header {
   border-bottom: 1px solid #ececec;
-  background-color: rgb(237, 246, 244);
+  background-color: #ffffff;
 }
 .header-container {
   display: flex;
@@ -39,7 +39,7 @@
   background-color: var(--blue-color);
   border-radius: 2px;
   left: 0;
-  bottom: -1px;
+  bottom: 0px;
 }
 .current {
   color: var(--blue-color);

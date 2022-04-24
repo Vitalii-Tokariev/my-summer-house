@@ -5,10 +5,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  background-image: url(../images/ukr-prapor.jpg);
+  background-size: cover;
+}
 img {
   display: block;
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   /*height: auto;*/
 }
@@ -31,9 +35,9 @@ ol {
 }
 .section {
   padding: 94px 0;
-  &.about {
-    background-color: rgb(237, 246, 244);
-  }
+  /*&.about {
+    background-color: rgb(197, 223, 197);
+  }*/
   &.footer {
     background: rgb(46, 90, 78);
     padding-top: 60px;
